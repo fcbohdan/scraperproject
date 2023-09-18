@@ -17,8 +17,8 @@ SELECTORS = {
 class ResultPage(webdriver.Chrome):
     def __init__(self, *args, **kwargs):
         options = webdriver.ChromeOptions()
-        # options.add_argument('--headless')
-        # options.add_argument('--disable-gpu')
+        options.add_argument('--headless')
+        options.add_argument('--disable-gpu')
         super(ResultPage, self).__init__(options=options, *args, **kwargs)
         self.items = []
 
@@ -39,7 +39,6 @@ class ResultPage(webdriver.Chrome):
         pages = [n + 1 for n in range(nr_items // 15)]
         if nr_items // 24 == 0:
             pages = [0]
-        print(pages)
         return pages
 
     def get_list_items(self):
@@ -67,23 +66,3 @@ class ResultPage(webdriver.Chrome):
         df['price'] = df['price'].str.replace('&nbsp;', '')
         df['price'] = df['price'].str.replace('.', '')
         df.to_csv('items.csv', index=False, mode='a', header=False)
-
-
-if __name__ == "__main__":
-    spider = ResultPage()
-    spider.get_page('https://m.ua/ua/m1_magazilla.php?brands_=736&katalog_=122&pf_=1&maxPrice_=125000&sc_id_=980&order_=pop&save_podbor_=1')
-    print(spider.get_pages_list())
-    # spider.get_list_items()
-    # spider.nr_of_pages = spider.get_number_of_pages()
-    # spider.list_items_to_csv()
-    spider.quit()
-    # for page_nr in range(spider.nr_of_pages-1):
-    #     spider = ResultPage()
-    #     print(page_nr+2)
-    #     spider.get_page(f'{spider.base_url}/{page_nr + 2}')
-    #     spider.get_list_items()
-    #     spider.list_items_to_csv()
-    #     spider.close()
-
-
-

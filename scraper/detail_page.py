@@ -17,8 +17,8 @@ SELECTORS = {
 class DetailPage(webdriver.Chrome):
     def __init__(self, url: str, *args, **kwargs):
         options = webdriver.ChromeOptions()
-        # options.add_argument('--headless')
-        # options.add_argument('--disable-gpu')
+        options.add_argument('--headless')
+        options.add_argument('--disable-gpu')
         super(DetailPage, self).__init__(options=options, *args, **kwargs)
         self.url = url
         self.details_data = {}
@@ -68,6 +68,3 @@ class DetailPage(webdriver.Chrome):
             return shops
         except NoSuchElementException as e:
             print(e)
-
-
-# if __name__ == "__main__":

@@ -53,9 +53,6 @@ def cli(
         min_price: int,
         brand: str = None,
 ):
-    click.echo(str(max_price))
-    click.echo(str(min_price))
-    click.echo(brand)
     result_page = ResultPage()
     page = 0
     if brand:
@@ -64,6 +61,7 @@ def cli(
         url = f"https://m.ua/ua/m1_magazilla.php?katalog_=122&page_={page}&minPrice_={min_price}&maxPrice_={max_price}"
     result_page.create_items_csv_if_not_exist()
     result_page.get_page(url)
+    print("getting first result page")
     result_page.get_list_items()
     result_page.list_items_to_csv()
     list_of_pages = result_page.get_pages_list()
@@ -80,7 +78,6 @@ def cli(
             result_page.get_list_items()
             result_page.list_items_to_csv()
     df = pd.read_csv('items.csv')
-    print(len(df))
     for index, row in df.iterrows():
         url = row['url']
         spider = DetailPage(url)
