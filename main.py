@@ -1,6 +1,7 @@
 from scraper.detail_page import DetailPage
 from scraper.result_page import ResultPage
 import time
+import os
 import pandas as pd
 from datetime import datetime
 import click
@@ -98,6 +99,12 @@ def cli(
         }
         filename = f"output/{datetime.now().strftime('%Y-%m-%d')}_{row['name'].lower().replace(' ','_')}.json"
         try:
+            if not os.path.exists('output'):
+                # Create the folder
+                os.mkdir('output')
+                print(f"Directory .'{'output'}'/ created.")
+            else:
+                print(f"Directory .'{'output'}'/ already exists.")
             with open(filename, 'w', encoding='utf-8') as json_file:
                 json.dump(data, json_file, ensure_ascii=False, indent=4)
             print(f"Data saved to {filename} successfully.")
