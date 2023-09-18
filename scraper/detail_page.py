@@ -17,8 +17,8 @@ SELECTORS = {
 class DetailPage(webdriver.Chrome):
     def __init__(self, url: str, *args, **kwargs):
         options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        options.add_argument('--disable-gpu')
+        # options.add_argument('--headless')
+        # options.add_argument('--disable-gpu')
         super(DetailPage, self).__init__(options=options, *args, **kwargs)
         self.url = url
         self.details_data = {}
@@ -60,10 +60,9 @@ class DetailPage(webdriver.Chrome):
             pass
         try:
             for row in self.find_elements(By.XPATH, SELECTORS['store_rows']):
-                shop_name = row.find_element(By.XPATH, SELECTORS['_shop_price']).text
-                shop_url = row.find_element(By.XPATH, SELECTORS['_shop_name']).get_attribute('title')
-                shop_price = row.find_element(By.XPATH, SELECTORS['_shop_name']).get_attribute('href')
-                shop = {'name': shop_name, 'url': shop_url, 'price': shop_price}
+                shop_name = row.find_element(By.XPATH, SELECTORS['_shop_name']).get_attribute('title')
+                shop_price = row.find_element(By.XPATH, SELECTORS['_shop_price']).text
+                shop = {'name': shop_name, 'price': shop_price}
                 shops.append(shop)
             return shops
         except NoSuchElementException as e:

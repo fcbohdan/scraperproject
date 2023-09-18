@@ -1,0 +1,114 @@
+(venv) PS C:\Users\HomePC\PycharmProjects\pythonProject\scraperproject> python main.py -f 10000 -t 20000 -b apple
+
+DevTools listening on ws://127.0.0.1:52889/devtools/browser/d5e55801-682f-4245-98fc-7b71700fd977
+File 'items.csv' has been created with the header.
+getting first result page
+[1]
+getting next result page
+
+DevTools listening on ws://127.0.0.1:52920/devtools/browser/690c62d0-2a60-464c-8c49-299bb168e4fe
+
+DevTools listening on ws://127.0.0.1:52952/devtools/browser/297981ca-7e2d-4eb3-89b7-8de2c0519b51
+Getting details for Apple iPhone 12 128GB
+Data saved to output/2023-09-19_apple_iphone_12_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:52999/devtools/browser/f73d46a4-1c5b-402d-a93d-ed16b97c963f
+Getting details for Apple iPhone 11 64GB
+Data saved to output/2023-09-19_apple_iphone_11_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53050/devtools/browser/4fb816ce-6c01-4a7a-a64d-163b426e4344
+Getting details for Apple iPhone 11 128GB
+Data saved to output/2023-09-19_apple_iphone_11_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53101/devtools/browser/b2ba9c7d-6ca2-42c5-82b8-4d0a1c92b708
+Getting details for Apple iPhone 12 64GB
+Data saved to output/2023-09-19_apple_iphone_12_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53151/devtools/browser/b3a61f34-ce5f-4b53-90d8-b494f06a4089
+Getting details for Apple iPhone SE 2020 64GB
+Data saved to output/2023-09-19_apple_iphone_se_2020_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53203/devtools/browser/09d84e84-15ef-4618-8931-b1da48e91362
+Getting details for Apple iPhone 12 mini 64GB
+Data saved to output/2023-09-19_apple_iphone_12_mini_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53253/devtools/browser/3088e822-a475-44ea-9017-40bcfe4c4400
+Getting details for Apple iPhone Xr 64GB
+Data saved to output/2023-09-19_apple_iphone_xr_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53304/devtools/browser/c8ce052c-d1eb-4911-866a-f739e747dc1c
+Getting details for Apple iPhone 11 Pro 64GB
+Data saved to output/2023-09-19_apple_iphone_11_pro_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53354/devtools/browser/d926aeda-5718-4677-bc5c-f936ba7db1c6
+Getting details for Apple iPhone 11 Pro 256GB
+Data saved to output/2023-09-19_apple_iphone_11_pro_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53405/devtools/browser/ede34319-db01-406c-ab21-a1ba4ca276f3
+Getting details for Apple iPhone Xr 128GB
+Data saved to output/2023-09-19_apple_iphone_xr_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53456/devtools/browser/6888e9ed-8a7a-470c-9fe1-44e483df1354
+Getting details for Apple iPhone 12 mini 128GB
+Data saved to output/2023-09-19_apple_iphone_12_mini_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53506/devtools/browser/d5144ea8-6abe-4e37-a5fb-42e2a82d45b6
+Getting details for Apple iPhone Xs 64GB
+Data saved to output/2023-09-19_apple_iphone_xs_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53556/devtools/browser/cf002e63-cd50-4539-9106-7ced27d231d2
+Getting details for Apple iPhone Xs 256GB
+Data saved to output/2023-09-19_apple_iphone_xs_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53607/devtools/browser/3312e0a1-d8b8-4a7c-8a55-51b53de70819
+Getting details for Apple iPhone Xs Max 256GB
+Data saved to output/2023-09-19_apple_iphone_xs_max_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53657/devtools/browser/b0b5ae58-36d6-48ee-8b0e-d3f0ad9ead35
+Getting details for Apple iPhone 11 Pro Max 64GB
+Data saved to output/2023-09-19_apple_iphone_11_pro_max_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53706/devtools/browser/2fc0851b-c4e0-4e53-8bdf-69578acee0d4
+Getting details for Apple iPhone SE 2022 64GB
+Data saved to output/2023-09-19_apple_iphone_se_2022_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53756/devtools/browser/9efeca29-b20b-492b-92cc-fedcccd4d991
+Getting details for Apple iPhone SE 2020 128GB
+Data saved to output/2023-09-19_apple_iphone_se_2020_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53807/devtools/browser/9926fd89-8835-4ee4-b0f0-183d9f79c279
+Getting details for Apple iPhone SE 2022 128GB
+Data saved to output/2023-09-19_apple_iphone_se_2022_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53859/devtools/browser/9f3450dd-1670-4956-b897-0646e8c9c5ad
+Getting details for Apple iPhone 11 256GB
+Data saved to output/2023-09-19_apple_iphone_11_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53909/devtools/browser/c7d5454f-2dce-4307-b26e-0a4233e4c878
+Getting details for Apple iPhone Xs Max 64GB
+Data saved to output/2023-09-19_apple_iphone_xs_max_64gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:53958/devtools/browser/9d93eb7f-3525-4ef1-95dc-279c74147a1c
+Getting details for Apple iPhone SE 2022 256GB
+Data saved to output/2023-09-19_apple_iphone_se_2022_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:54017/devtools/browser/76be09ad-6284-41bf-8bcf-bf3aafc760cf
+Getting details for Apple iPhone Xr Dual 128GB
+Data saved to output/2023-09-19_apple_iphone_xr_dual_128gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:54069/devtools/browser/31c46425-6d3f-426a-a35a-3d5afdb9cadb
+Getting details for Apple iPhone Xr 256GB
+Data saved to output/2023-09-19_apple_iphone_xr_256gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:54118/devtools/browser/1aff8c23-02e8-48e1-86a7-98e401c06798
+Getting details for Apple iPhone Xs 512GB
+Data saved to output/2023-09-19_apple_iphone_xs_512gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:54171/devtools/browser/09eece30-1853-4788-a0af-8c41f5f5de4f
+Getting details for Apple iPhone Xs Max 512GB
+Data saved to output/2023-09-19_apple_iphone_xs_max_512gb.json successfully.
+
+DevTools listening on ws://127.0.0.1:54222/devtools/browser/df747f59-1a65-47d3-ab1a-0b6b8836aa4a
+Getting details for Apple iPhone SE 2020 256GB
+Data saved to output/2023-09-19_apple_iphone_se_2020_256gb.json successfully.
+(venv) PS C:\Users\HomePC\PycharmProjects\pythonProject\scraperproject> 

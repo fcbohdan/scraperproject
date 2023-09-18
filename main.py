@@ -1,5 +1,6 @@
 from scraper.detail_page import DetailPage
 from scraper.result_page import ResultPage
+import time
 import pandas as pd
 from datetime import datetime
 import click
@@ -77,11 +78,14 @@ def cli(
             result_page.get_page(url)
             result_page.get_list_items()
             result_page.list_items_to_csv()
+            result_page.quit()
     df = pd.read_csv('items.csv')
     for index, row in df.iterrows():
         url = row['url']
         spider = DetailPage(url)
         spider.get_page()
+        print(f"Getting details for {row['name']}")
+        time.sleep(2)
         details = spider.get_details()
         spider.get_price_page()
         pricelist = spider.get_price()
